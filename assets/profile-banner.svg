@@ -17,11 +17,6 @@
     @keyframes type-reveal { 0%, 31%, 100% { clip-path: inset(0 100% 0 0); } 7%, 24% { clip-path: inset(0 0 0 0); } }
     @keyframes type-caret { 0%, 31%, 100% { transform: translateX(0); } 7%, 24% { transform: translateX(var(--word-width)); } }
     @keyframes caret-blink { 0%, 100% { opacity: .65; } 50% { opacity: 0; } }
-    @media (prefers-reduced-motion: reduce) {
-      .orbit, .outer-orbit, .status-light, .core-ring, .download-fill, .typing-slot, .typed-text, .caret-position, .caret { animation: none; }
-      .typing-slot { opacity: 0; } .typing-first { opacity: 1; }
-      .typed-text { clip-path: none; } .caret-position { transform: translateX(var(--word-width)); } .caret { opacity: .5; }
-    }
   </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#0D1727"/><stop offset="1" stop-color="#152C3C"/></linearGradient>
