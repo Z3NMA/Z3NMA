@@ -1,88 +1,30 @@
-<div align="center">
+# 정재민 · Jaemin Jeong
 
-<br>
+**Full-stack Developer · Web**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0064FF&height=120&section=header&text=Jaemin%20Jeong&fontSize=36&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" />
+웹을 중심으로 프론트엔드와 백엔드를 개발합니다.
+관심 있는 아이디어를 직접 구현하고, 만들고 싶은 서비스를 완성해 나갑니다.
 
-<br>
+## About
 
-### 안녕하세요, 프론트엔드 개발자 정재민입니다 👋
+사용자에게 보이는 화면부터 서버와 데이터까지, 서비스 전체의 흐름을 이해하며 개발합니다.
+사용하기 편한 경험과 유지보수하기 좋은 구조를 함께 고민합니다.
 
-<br>
+필요한 기술을 배우고 적용하며 관심의 범위를 넓혀갑니다.
+작은 아이디어도 실제로 동작하는 결과물로 만드는 과정을 좋아합니다.
 
-<p>
-  <img src="https://img.shields.io/badge/React-0064FF?style=flat-square&logo=react&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TypeScript-0064FF?style=flat-square&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-0064FF?style=flat-square&logo=javascript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Node.js-0064FF?style=flat-square&logo=nodedotjs&logoColor=white"/>
-</p>
+## Tech Stack
 
-<br>
+| 분야 | 기술 |
+| :--- | :--- |
+| Frontend | React, TypeScript, JavaScript, HTML, CSS |
+| Backend & Database | Node.js, JSP, MySQL |
+| Tools | Git, GitHub, VS Code |
 
-</div>
+## Contact
 
-<br>
+[zenma.dev@gmail.com](mailto:zenma.dev@gmail.com) · [GitHub](https://github.com/jaemnie)
 
-## 🧑‍💻 About
+## Activity
 
-```
-사용자 경험을 최우선으로 생각하는 개발자입니다.
-깔끔한 코드와 직관적인 UI/UX를 만들기 위해 노력합니다.
-```
-
-<br>
-
-## 🛠 Skills
-
-<br>
-
-<div align="center">
-
-|Frontend|Backend|Tools|
-|:------:|:-----:|:---:|
-|![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)|![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)|![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)|
-|![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)|![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)|![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)|
-|![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)|![JSP](https://img.shields.io/badge/JSP-007396?style=flat-square&logo=java&logoColor=white)|![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)|
-|![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)|||
-|![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)|||
-
-</div>
-
-<br><br>
-
-## 📊 Stats
-
-<br>
-
-<div align="center">
-<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats-blush-theta-23.vercel.app?user=Jaemnie&theme=blueberry&hide_border=true&locale=ko&short_numbers=true&mode=weekly" alt="GitHub Streak" /></a>
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github.com/jaemnie/jaemnie/blob/output/mysnake.svg" width="80%">
-</div>
-
-<br><br>
-
-## 📬 Contact
-
-<br>
-
-<div align="center">
-  <a href="mailto:zenma.dev@gmail.com">
-    <img src="https://img.shields.io/badge/zenma.dev@gmail.com-0064FF?style=flat-square&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://github.com/jaemnie">
-    <img src="https://img.shields.io/badge/jaemnie-191F28?style=flat-square&logo=github&logoColor=white"/>
-  </a>
-</div>
-
-<br><br>
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0064FF&height=80&section=footer" width="100%" />
-
-</div>
+![GitHub contribution snake](https://github.com/jaemnie/jaemnie/blob/output/mysnake.svg)
