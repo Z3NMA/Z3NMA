@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">ZENMA — Toolkit</title><desc id="desc">Languages: TypeScript, JavaScript, HTML, CSS. Stack: React, Node.js, JSP, MySQL. Tools: Git, GitHub, VS Code.</desc>
+<defs><linearGradient id="surface" x2="1200" y2="300" gradientUnits="userSpaceOnUse"><stop stop-color="#0D1727"/><stop offset="1" stop-color="#152C3C"/></linearGradient></defs>
+<style>text{font-family:Segoe UI,Arial,sans-serif}.mono{font-family:Consolas,monospace}</style>
+<rect x="1" y="1" width="1198" height="298" rx="24" fill="url(#surface)" stroke="#253B4C"/>
+<text x="40" y="43" fill="#80E8CB" font-size="12" class="mono" letter-spacing="2">01 / RESOURCES</text><text x="40" y="88" fill="#E7EFF5" font-size="30" font-weight="600">Toolkit</text><g>
+<rect x="40" y="125" width="360" height="142" rx="12" fill="#0D1928" fill-opacity=".7" stroke="#2A4152"/>
+<path d="M0 6L-8 14L0 22M14 6L22 14L14 22M10 3L4 25" transform="translate(355 143)" stroke="#80E8CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="62" y="156" fill="#91A9B9" font-size="12" class="mono" letter-spacing="1.3">01 / LANGUAGES</text>
+<text x="62" y="201" fill="#E7EFF5" font-size="23" font-weight="500">TypeScript · JavaScript</text>
+<text x="62" y="237" fill="#91A9B9" font-size="18" >HTML · CSS</text>
+</g>
+<g>
+<rect x="420" y="125" width="360" height="142" rx="12" fill="#0D1928" fill-opacity=".7" stroke="#2A4152"/>
+<path d="M-6 8L7 1L20 8L7 15ZM-6 14L7 21L20 14M-6 20L7 27L20 20" transform="translate(735 143)" stroke="#80E8CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="442" y="156" fill="#91A9B9" font-size="12" class="mono" letter-spacing="1.3">02 / STACK</text>
+<text x="442" y="201" fill="#E7EFF5" font-size="23" font-weight="500">React · Node.js</text>
+<text x="442" y="237" fill="#91A9B9" font-size="18" >JSP · MySQL</text>
+</g>
+<g>
+<rect x="800" y="125" width="360" height="142" rx="12" fill="#0D1928" fill-opacity=".7" stroke="#2A4152"/>
+<path d="M-3 4V22H17M-3 13H17M17 4V22" transform="translate(1115 143)" stroke="#80E8CB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="822" y="156" fill="#91A9B9" font-size="12" class="mono" letter-spacing="1.3">03 / TOOLS</text>
+<text x="822" y="201" fill="#E7EFF5" font-size="23" font-weight="500">Git · GitHub</text>
+<text x="822" y="237" fill="#91A9B9" font-size="18" >VS Code</text>
+</g>
+</svg>

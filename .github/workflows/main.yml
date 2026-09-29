@@ -1,32 +1,43 @@
-name: generate animation
+name: Update profile visuals
 on:
   schedule:
-    - cron: "0 0 * * *" 
+    - cron: "0 0 * * *"
   workflow_dispatch:
   push:
-    branches:
-    - master
-    
+    branches: [main, master]
+    paths:
+      - scripts/profile-visuals.mjs
+      - scripts/profile-visuals.test.mjs
+      - .github/workflows/main.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: false
+
 jobs:
-  generate:
-    permissions: 
-      contents: write
+  update:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: generate github-contribution-grid-snake.svg
-        uses: Platane/snk/svg-only@v3
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          github_user_name: jaemnie
-          outputs: |
-            dist/mysnake.svg?color_snake=#58A6FF&color_dots=#EEEEEE,#E1BEE7,#BA68C8,#8E24AA,#4A148C?palette=github-dark
-
-      - name: push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
+          node-version: "22"
+          package-manager-cache: false
+      - name: Validate renderer
+        run: node --test scripts/profile-visuals.test.mjs
+      - name: Render profile visuals
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: node scripts/profile-visuals.mjs
+      - name: Commit updated visuals
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/activity.svg assets/toolkit.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore: refresh profile visuals"
+          git push
