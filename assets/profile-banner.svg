@@ -1,6 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" fill="none" role="img" aria-labelledby="title desc">
   <title id="title">ZENMA — Developer</title>
-  <desc id="desc">An abstract orbital composition on a dark background.</desc>
+  <desc id="desc">A central Z emblem surrounded by slowly rotating orbits, with cycling code, build, run text, a decorative download-style progress line and subtle pulsing accents.</desc>
+  <style>
+    .orbit { transform-origin: 0px 0px; animation: orbit-turn 48s linear infinite; }
+    .outer-orbit { transform-origin: 0px 0px; animation: orbit-turn 72s linear infinite reverse; }
+    .status-light, .core-ring { animation: breathe 6s ease-in-out infinite; }
+    .download-fill { stroke-dasharray: 472; stroke-dashoffset: 0; animation: download-cycle 12s linear infinite; }
+    @keyframes orbit-turn { to { transform: rotate(360deg); } }
+    @keyframes breathe { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    @keyframes download-cycle { 0% { stroke-dashoffset: 472; opacity: .9; } 12% { stroke-dashoffset: 425; } 40% { stroke-dashoffset: 245; } 68% { stroke-dashoffset: 95; } 80%, 90% { stroke-dashoffset: 0; opacity: .9; } 96% { stroke-dashoffset: 0; opacity: 0; } 96.01%, 100% { stroke-dashoffset: 472; opacity: 0; } }
+    .typing-slot { opacity: 0; animation: type-visible 18s linear infinite; animation-delay: var(--delay); }
+    .typed-text { clip-path: inset(0 100% 0 0); animation: type-reveal 18s steps(var(--letters), end) infinite; animation-delay: var(--delay); }
+    .caret-position { animation: type-caret 18s steps(var(--letters), end) infinite; animation-delay: var(--delay); }
+    .caret { animation: caret-blink 1s step-end infinite; }
+    @keyframes type-visible { 0%, 32.99% { opacity: 1; } 33%, 100% { opacity: 0; } }
+    @keyframes type-reveal { 0%, 31%, 100% { clip-path: inset(0 100% 0 0); } 7%, 24% { clip-path: inset(0 0 0 0); } }
+    @keyframes type-caret { 0%, 31%, 100% { transform: translateX(0); } 7%, 24% { transform: translateX(var(--word-width)); } }
+    @keyframes caret-blink { 0%, 100% { opacity: .65; } 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .orbit, .outer-orbit, .status-light, .core-ring, .download-fill, .typing-slot, .typed-text, .caret-position, .caret { animation: none; }
+      .typing-slot { opacity: 0; } .typing-first { opacity: 1; }
+      .typed-text { clip-path: none; } .caret-position { transform: translateX(var(--word-width)); } .caret { opacity: .5; }
+    }
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#0D1727"/><stop offset="1" stop-color="#152C3C"/></linearGradient>
     <linearGradient id="accent" x1="60" y1="0" x2="1140" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#80E8CB"/><stop offset="1" stop-color="#659EEA"/></linearGradient>
@@ -9,24 +31,50 @@
   <rect width="1200" height="400" rx="24" fill="url(#bg)"/>
   <rect width="1200" height="400" rx="24" fill="url(#grid)"/>
   <path d="M60 1H1140" stroke="url(#accent)" stroke-width="2"/>
-  <circle cx="65" cy="65" r="5" fill="#80E8CB"/>
-  <text x="82" y="70" fill="#A6BDC9" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="3">ZENMA</text>
+  <circle class="status-light" cx="65" cy="65" r="5" fill="#80E8CB"/>
+  <text x="82" y="70" fill="#A6BDC9" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="3">DEVELOPER</text>
   <text x="60" y="177" fill="#F3F7FB" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-2">ZENMA</text>
-  <text x="63" y="224" fill="#80E8CB" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="500">Developer</text>
-  <path d="M63 302H143" stroke="#80E8CB" stroke-opacity=".55"/>
+  <g transform="translate(63 223)" aria-label="code, build, run" font-family="Courier New, monospace" font-size="18" fill="#91A9B9">
+    <g class="typing-slot typing-first" style="--delay:0s;--letters:4;--word-width:43.2px">
+      <text class="typed-text" textLength="43.2" lengthAdjust="spacingAndGlyphs">code</text>
+      <g class="caret-position"><path class="caret" d="M4-15V3" stroke="#91A9B9" stroke-width="1.5"/></g>
+    </g>
+    <g class="typing-slot" style="--delay:6s;--letters:5;--word-width:54px">
+      <text class="typed-text" textLength="54" lengthAdjust="spacingAndGlyphs">build</text>
+      <g class="caret-position"><path class="caret" d="M4-15V3" stroke="#91A9B9" stroke-width="1.5"/></g>
+    </g>
+    <g class="typing-slot" style="--delay:12s;--letters:3;--word-width:32.4px">
+      <text class="typed-text" textLength="32.4" lengthAdjust="spacingAndGlyphs">run</text>
+      <g class="caret-position"><path class="caret" d="M4-15V3" stroke="#91A9B9" stroke-width="1.5"/></g>
+    </g>
+  </g>
+  <g aria-label="Decorative download progress animation">
+    <path d="M63 278H535" stroke="#7F9BAD" stroke-opacity=".2" stroke-width="3" stroke-linecap="round"/>
+    <path class="download-fill" d="M63 278H535" stroke="#80E8CB" stroke-width="3" stroke-linecap="round"/>
+    <path d="M63 291V299M87 291V295M111 291V295M135 291V295M159 291V299M183 291V295M207 291V295M231 291V295M255 291V299M279 291V295M303 291V295M327 291V295M351 291V299M375 291V295M399 291V295M423 291V295M447 291V299M471 291V295M495 291V295M519 291V295M535 291V299" stroke="#7F9BAD" stroke-opacity=".35"/>
+    <path d="M530 260H540M535 255V265" stroke="#80E8CB" stroke-opacity=".5"/>
+  </g>
   <g transform="translate(890 200)">
     <circle r="145" stroke="#8BA7BB" stroke-opacity=".1"/>
     <circle r="102" stroke="#8BA7BB" stroke-opacity=".08"/>
-    <ellipse rx="183" ry="69" transform="rotate(-35)" stroke="#8DAFC5" stroke-opacity=".38"/>
-    <ellipse rx="183" ry="69" transform="rotate(35)" stroke="#8DAFC5" stroke-opacity=".22"/>
-    <ellipse rx="69" ry="158" transform="rotate(12)" stroke="#80E8CB" stroke-opacity=".3"/>
-    <path d="M-150-92C-104-153-18-166 46-137" stroke="#B5D2DC" stroke-opacity=".6" stroke-linecap="round"/>
-    <path d="M-43 139C26 162 111 125 142 62" stroke="#80E8CB" stroke-opacity=".55" stroke-linecap="round"/>
-    <path d="M-18 0H18M0-18V18" stroke="#C6D8E4" stroke-opacity=".55"/>
-    <circle r="4" fill="#DAE8EE"/>
-    <circle cx="150" cy="-94" r="5" fill="#80E8CB"/>
-    <circle cx="150" cy="-94" r="12" stroke="#80E8CB" stroke-opacity=".2"/>
-    <circle cx="-129" cy="-105" r="3" fill="#A4BBCD"/>
-    <circle cx="-29" cy="147" r="3" fill="#A4BBCD"/>
+    <g class="orbit">
+      <ellipse rx="183" ry="69" transform="rotate(-35)" stroke="#8DAFC5" stroke-opacity=".38"/>
+      <ellipse rx="183" ry="69" transform="rotate(35)" stroke="#8DAFC5" stroke-opacity=".22"/>
+      <ellipse rx="69" ry="158" transform="rotate(12)" stroke="#80E8CB" stroke-opacity=".3"/>
+      <circle cx="150" cy="-94" r="5" fill="#80E8CB"/>
+      <circle cx="150" cy="-94" r="12" stroke="#80E8CB" stroke-opacity=".2"/>
+    </g>
+    <g class="outer-orbit">
+      <path d="M-150-92C-104-153-18-166 46-137" stroke="#B5D2DC" stroke-opacity=".6" stroke-linecap="round"/>
+      <path d="M-43 139C26 162 111 125 142 62" stroke="#80E8CB" stroke-opacity=".55" stroke-linecap="round"/>
+      <circle cx="-129" cy="-105" r="3" fill="#A4BBCD"/>
+      <circle cx="-29" cy="147" r="3" fill="#A4BBCD"/>
+    </g>
+    <circle r="58" fill="#101F2E" stroke="#496576" stroke-opacity=".55"/>
+    <circle class="core-ring" r="65" stroke="#80E8CB" stroke-opacity=".25" stroke-dasharray="2 10"/>
+    <g transform="translate(-36 -36) scale(1.2857)">
+      <path d="M0 0H39L53 14L31 36L40 17H14Z" fill="#80E8CB"/>
+      <path d="M25 20L14 39H41L56 56H17L3 42Z" fill="#80E8CB" fill-opacity=".7"/>
+    </g>
   </g>
 </svg>
