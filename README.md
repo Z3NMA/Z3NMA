@@ -1,30 +1,26 @@
-# 정재민 · Jaemin Jeong
+<p align="center">
+  <img src="./assets/profile-banner.svg" width="100%" alt="정재민 · Jaemin Jeong — Developer" />
+</p>
 
-**Full-stack Developer · Web**
+<p align="center">
+  <a href="mailto:zenma.dev@gmail.com"><img src="https://img.shields.io/badge/Email-zenma.dev%40gmail.com-163B3E?style=flat-square&amp;labelColor=111F2F" alt="Email: zenma.dev@gmail.com" /></a>
+  <a href="https://github.com/jaemnie"><img src="https://img.shields.io/badge/GitHub-%40jaemnie-1B2E48?style=flat-square&amp;labelColor=111F2F&amp;logo=github&amp;logoColor=white" alt="GitHub: @jaemnie" /></a>
+</p>
 
-웹을 중심으로 프론트엔드와 백엔드를 개발합니다.
-관심 있는 아이디어를 직접 구현하고, 만들고 싶은 서비스를 완성해 나갑니다.
+<br>
 
-## About
+## Toolkit
 
-사용자에게 보이는 화면부터 서버와 데이터까지, 서비스 전체의 흐름을 이해하며 개발합니다.
-사용하기 편한 경험과 유지보수하기 좋은 구조를 함께 고민합니다.
-
-필요한 기술을 배우고 적용하며 관심의 범위를 넓혀갑니다.
-작은 아이디어도 실제로 동작하는 결과물로 만드는 과정을 좋아합니다.
-
-## Tech Stack
-
-| 분야 | 기술 |
+| | |
 | :--- | :--- |
-| Frontend | React, TypeScript, JavaScript, HTML, CSS |
-| Backend & Database | Node.js, JSP, MySQL |
-| Tools | Git, GitHub, VS Code |
+| **Languages** | TypeScript · JavaScript · HTML · CSS |
+| **Stack** | React · Node.js · JSP · MySQL |
+| **Tools** | Git · GitHub · VS Code |
 
-## Contact
-
-[zenma.dev@gmail.com](mailto:zenma.dev@gmail.com) · [GitHub](https://github.com/jaemnie)
+<br>
 
 ## Activity
 
-![GitHub contribution snake](https://github.com/jaemnie/jaemnie/blob/output/mysnake.svg)
+<p align="center">
+  <img src="https://github.com/jaemnie/jaemnie/blob/output/mysnake.svg" width="100%" alt="GitHub 기여 활동을 보여주는 잔디 뱀 애니메이션" />
+</p>

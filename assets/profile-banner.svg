@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Jaemin Jeong — Developer</title>
+  <desc id="desc">An abstract orbital composition on a dark background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#0D1727"/><stop offset="1" stop-color="#152C3C"/></linearGradient>
+    <linearGradient id="accent" x1="60" y1="0" x2="1140" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#80E8CB"/><stop offset="1" stop-color="#659EEA"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="#A4C6DD" stroke-opacity=".06"/></pattern>
+  </defs>
+  <rect width="1200" height="400" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="400" rx="24" fill="url(#grid)"/>
+  <path d="M60 1H1140" stroke="url(#accent)" stroke-width="2"/>
+  <circle cx="65" cy="65" r="5" fill="#80E8CB"/>
+  <text x="82" y="70" fill="#A6BDC9" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="3">JAEMNIE</text>
+  <text x="60" y="177" fill="#F3F7FB" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-2">Jaemin Jeong</text>
+  <text x="63" y="224" fill="#80E8CB" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="500">Developer</text>
+  <path d="M63 302H143" stroke="#80E8CB" stroke-opacity=".55"/>
+  <g transform="translate(890 200)">
+    <circle r="145" stroke="#8BA7BB" stroke-opacity=".1"/>
+    <circle r="102" stroke="#8BA7BB" stroke-opacity=".08"/>
+    <ellipse rx="183" ry="69" transform="rotate(-35)" stroke="#8DAFC5" stroke-opacity=".38"/>
+    <ellipse rx="183" ry="69" transform="rotate(35)" stroke="#8DAFC5" stroke-opacity=".22"/>
+    <ellipse rx="69" ry="158" transform="rotate(12)" stroke="#80E8CB" stroke-opacity=".3"/>
+    <path d="M-150-92C-104-153-18-166 46-137" stroke="#B5D2DC" stroke-opacity=".6" stroke-linecap="round"/>
+    <path d="M-43 139C26 162 111 125 142 62" stroke="#80E8CB" stroke-opacity=".55" stroke-linecap="round"/>
+    <path d="M-18 0H18M0-18V18" stroke="#C6D8E4" stroke-opacity=".55"/>
+    <circle r="4" fill="#DAE8EE"/>
+    <circle cx="150" cy="-94" r="5" fill="#80E8CB"/>
+    <circle cx="150" cy="-94" r="12" stroke="#80E8CB" stroke-opacity=".2"/>
+    <circle cx="-129" cy="-105" r="3" fill="#A4BBCD"/>
+    <circle cx="-29" cy="147" r="3" fill="#A4BBCD"/>
+  </g>
+</svg>
