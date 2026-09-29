@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-banner.svg?v=14a3ed536d05" width="100%" alt="ZENMA — Developer" />
+  <img src="https://raw.githubusercontent.com/Z3NMA/Z3NMA/main/assets/profile-banner.svg?v=14a3ed536d05" width="100%" alt="ZENMA — Developer" />
 </p>
 
 <p align="center">
